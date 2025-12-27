@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #fff7f9;
+  color: #333;
+  text-align: center;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.cover h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+}
+
+.cover h2 {
+  font-size: 32px;
+  color: #e75480;
+}
+
+.cover p {
+  font-size: 16px;
+}
+
+.letter p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.photos img {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 16px;
+  margin: 15px 0;
+}
+
+.video video {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+}
+
+.ending p {
+  font-size: 20px;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
