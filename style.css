@@ -1,60 +1,100 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background: #fff7f9;
-  color: #333;
+  background-color: #ffe6ec;
+  background-image: url("peonies.png");
+  background-repeat: repeat;
+  background-size: 300px;
+  background-attachment: fixed;
+  color: #4a2c2a;
   text-align: center;
 }
 
+/* SECTION CARD */
 section {
   padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 20px;
+  margin: 30px auto;
+  max-width: 900px;
 }
 
+/* COVER */
 .cover h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 48px;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .cover h2 {
   font-size: 32px;
   color: #e75480;
+  margin: 0;
 }
 
-.cover p {
+.date {
   font-size: 16px;
+  margin-top: 10px;
 }
 
+/* LETTER */
 .letter p {
-  max-width: 600px;
-  margin: auto;
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.9;
+  max-width: 700px;
+  margin: auto;
 }
 
+/* PHOTOS */
 .photos img {
   width: 90%;
-  max-width: 400px;
-  border-radius: 16px;
+  max-width: 420px;
+  border-radius: 18px;
   margin: 15px 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
+/* VIDEO */
 .video video {
   width: 90%;
-  max-width: 500px;
-  border-radius: 16px;
+  max-width: 520px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* ENDING */
 .ending p {
   font-size: 20px;
 }
 
+.ending h3 {
+  font-size: 28px;
+}
+
+/* FADE ANIMATION */
 .fade {
   opacity: 0;
   transform: translateY(30px);
-  transition: 1s ease;
+  transition: all 1s ease;
 }
 
 .fade.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  body {
+    background-size: 200px;
+  }
+
+  section {
+    margin: 15px;
+    padding: 30px 15px;
+  }
+
+  .cover h1 {
+    font-size: 42px;
+  }
 }
